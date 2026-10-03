@@ -1,13 +1,11 @@
 name: Mandir Check
 on:
-   push:
-      branches: [ main ]
+push:
+branches: [ main ]
 jobs:
-    check-mandir:
-      runs-on: ubuntu-latest
-      steps:
-         -uses: actions/checkout@v4
-         -name: Mandir dekhna
-            run: |
-                echo "Radhe Radhe Shri Harivansh"
-                cat mandir.txt
+check:
+runs-on: ubuntu-latest
+steps:
+-uses: actions/checkout@v4
+-run: echo "Radhe Radhe - CI Sahi Hai"
+-run: ls -la
