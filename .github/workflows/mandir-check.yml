@@ -1,11 +1,9 @@
-name: Mandir Check
-on:
-push:
-branches: [ main ]
+name: Mandir Chek
+on: [ push ]
 jobs:
 check:
-runs-on: ubuntu-latest
+run-on: ubuntu-lastest
 steps:
--uses: actions/checkout@v4
--run: echo "Radhe Radhe - CI Sahi Hai"
--run: ls -la
+   - uses: actions/checkout@v4
+   -name: Radhe Radhe
+ run: echo "Radhe Radhe - CI pass ho gaya 
